@@ -1,0 +1,51 @@
+
+.disclaimer-text { 
+    text-align: center;
+    text-decoration: underline;  
+}
+.text-algiment{ 
+    text-decoration: underline;  
+    color: rgb(79,134,142);
+}
+.forgot-text{
+    font-size: 13px;
+}
+.disclaimer-text-color{
+    color: rgb(79,134,142);
+}
+.head{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+} 
+.remember-text{
+    position: relative;
+    left: 5px;
+}
+.max-width-500{
+    max-width: 500px;
+}
+.my-auto {
+    margin: {
+        top: auto;
+        bottom: auto;       
+    }
+}
+.contact-btn {
+    background-color: rgb(79,134,142);
+    color: white; 
+    padding: 10px 25px;
+    border: none;
+    border-radius: 0;
+}
+.login-btn{
+    text-align: center;
+}
+.pad-top{
+    padding-top: 15px;
+    float: right;
+}
+.overflow-y{
+    overflow-y: auto;
+    margin-bottom: 100px;
+}

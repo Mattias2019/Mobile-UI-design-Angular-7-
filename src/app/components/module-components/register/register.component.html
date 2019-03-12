@@ -1,0 +1,107 @@
+<div class="container"> 
+	<div class="max-width-500 mx-auto overflow-y">
+		<div class="pad-top">
+			<i class="material-icons" [routerLink]="'/app/home'" >arrow_back</i>	
+		</div>	
+		<div class="head">
+			<h3>Registration</h3>
+		</div>
+		<div class="row mx-0" >
+			<div class="col-12">
+				<label>Gender</label>
+				<div class="form-group form-inline radion-button-margion">
+					<div class="custom-control custom-radio">
+						<input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+						<label class="custom-control-label" for="customRadio1">Male</label>
+					</div>
+					<div class="custom-control custom-radio right-margion">
+						<input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+						<label class="custom-control-label" for="customRadio2">Female</label>
+					</div>
+				</div>
+			</div> 
+			<div class="col-12">
+				<label>Invitation Code</label>
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder=""/>
+				</div>
+			</div>
+			<div class="col-12">
+				<label>First Name</label>
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="First Name"/>
+				</div>
+			</div> 
+			<div class="col-12">
+				<label>Last Name</label>
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="Last Name"/>
+				</div>
+			</div>
+			<div class="col-12">
+				<label>Country Of Residence</label>
+				<div class="form-group">
+					<select class="form-control">
+						<option disabled>Select </option>
+						<option>Belgium  </option>
+						<option>France  </option>
+					</select>
+				</div>
+			</div>
+			<div class="col-12">
+				<label>E-mail</label>
+				<div class="form-group">
+					<input type="email" class="form-control" placeholder="E-mail"/>
+				</div>
+			</div>  
+			<div class="col-12">
+				<label>Date Of Birth</label>
+				<div class="form-group ">  
+					<!-- <p-calendar [(ngModel)]="date3"  ></p-calendar> -->
+					<input type="date" class="form-control"/>	 
+					<!-- <ng-datepicker [(ngModel)]="date" /> -->
+				</div>
+			</div> 
+			<div class="col-12">
+				<label>Password</label>
+				<div class="form-group">
+					<input type="password" class="form-control" placeholder="Password"/>
+				</div>
+			</div> 
+			<div class="col-12">
+				<label>Confirm Password</label>
+				<div class="form-group">
+					<input type="password" class="form-control" placeholder="Confirm Password"/>
+				</div>
+			</div> 
+			<!-- <div class="col-md-12">
+				<div class="form-group custom-control custom-checkbox">
+						<input type="checkbox" class="custom-control-input" id="customCheck1">
+						<label class="custom-control-label" for="customCheck1">I'm not a robot</label>
+				</div>
+			</div> -->
+			  <div class="col-md-12">
+					<recaptcha
+					[formControl]="myRecaptcha"
+					(scriptLoad)="onScriptLoad()"
+					(scriptError)="onScriptError()"
+				  ></recaptcha>
+					<!-- <recaptcha [formControl]="myRecaptcha" (scriptLoad)="onScriptLoad()" (scriptError)="onScriptError()"
+					 data-sitekey="6Lf3UnAUAAAAAHTNIM3gV4BW2EaWhqcrCGCdPfND"></recaptcha> -->
+					<!-- <re-captcha (resolved="resolved($event" siteKey="6Lf3UnAUAAAAAHTNIM3gV4BW2EaWhqcrCGCdPfND")></re-captcha> -->
+
+				<!-- <div class="form-group g-recaptcha" data-sitekey="6Lf3UnAUAAAAAHTNIM3gV4BW2EaWhqcrCGCdPfND"></div> -->
+			</div> 
+			<div class="col-12 pt-2">
+				<div class="login-btn"> 
+					<button mat-raised-button class="contact-btn d-b mx-auto my-auto" [routerLink]="'/app/terms-condition'" >next</button>
+				</div>
+			</div>
+		</div>
+		<!-- <div class="disclaimer-text"> 
+			<a href="https://m.cspot.app/disclaimer" >Disclaimer</a>
+		</div> -->
+	</div>
+	</div>
+	
+ 

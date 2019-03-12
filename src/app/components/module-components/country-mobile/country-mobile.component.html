@@ -1,0 +1,51 @@
+<div class="container"> 
+	<div class="max-width-500 mx-auto  overflow-y">
+		<div class="pad-top">
+			<i class="material-icons" [routerLink]="'/app/terms-condition'" >arrow_back</i>	
+		</div>
+		<div class="row mx-0 mrgion-top">
+			<div class="col-12">
+				<label >Enter your mobile number</label>
+			</div>
+			<div class="col-4 pr-0">
+				
+				<div class="form-group">
+					<select class="form-control bdr-radius-0">
+						<option>+91</option>
+						<option>+1</option>
+						<option>+44</option>
+						<option>+52</option>
+						<option>+86</option>
+					</select>
+				</div> 
+			</div>
+			<div class="col-8 pl-0">
+				<div class="form-group">
+					<input type="number" placeholder="" class="form-control bdr-left-none bdr-radius-0"/>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="login-btn"> 
+					<button mat-raised-button class="contact-btn d-b mx-auto my-auto show-code-btn"  >Send verification sms</button>
+				</div>
+			</div>
+		</div> 
+		<div class="show-code-content">
+			<div class="row mx-0"> 
+				<div class="col-12">
+					<label >Enter your code</label>
+					<div class="form-group">
+						<input type="text" placeholder="" class="form-control"/>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="login-btn"> 
+						<button mat-raised-button class="contact-btn d-b mx-auto my-auto" [routerLink]="'/app/thank-you'" >Verify</button>
+					</div>
+				</div>
+			</div> 
+		</div> 
+	</div>
+</div> 
+
+	 

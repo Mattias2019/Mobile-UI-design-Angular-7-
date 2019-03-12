@@ -1,0 +1,37 @@
+<div class="container"> 
+	<div class="max-width-500 mx-auto overflow-y">
+		<div class="pad-top">
+			<i class="material-icons" [routerLink]="'/app/login'" >arrow_back</i>	
+		</div> 
+		<div class="row mx-0 margion-top"> 
+			<div class="col-12">
+				<label >Enter your email</label>
+				<div class="form-group">
+					<input type="email" placeholder="email" class="form-control"/>
+				</div>
+			</div> 
+			<div class="col-12">
+				<div class="login-btn"> 
+					<button mat-raised-button class="contact-btn d-b mx-auto my-auto show-code-btn"  >Submit</button>
+				</div>
+			</div>
+		</div>
+		<div class="show-code-content">
+			<div class="row mx-0"> 
+				<div class="col-12">
+					<label >Enter your code</label>
+					<div class="form-group">
+						<input type="text" placeholder="" class="form-control"/>
+					</div>
+				</div> 
+				<div class="col-12">
+					<div class="login-btn"> 
+						<button mat-raised-button class="contact-btn d-b mx-auto my-auto"   [routerLink]="'/app/reset-password'" >Verify</button>
+					</div>
+				</div>
+			</div> 
+		</div>
+	</div>
+</div> 
+
+	 

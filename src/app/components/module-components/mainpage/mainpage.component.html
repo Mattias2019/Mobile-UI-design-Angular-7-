@@ -1,0 +1,156 @@
+<!-- <nav class="navbar nav-bar navbar-expand-md {{isColor? ' nav-bar-light':'nav-bar-dark'}}">
+  <img class="mr-2 " src="assets/image/left-arrow.png" alt="" *ngIf="isShow" (click)="isShow=!isShow">
+  <img class="mr-2 menu" src="assets/image/menu-button-of-three-horizontal-lines.png" *ngIf="!isShow" (click)="isShow=!isShow" alt="">
+  <a class="navbar-brand">
+    <img class="logo" src="assets/image/c_logo_w.png">
+  </a>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <mat-slide-toggle class="primary" (change)="isColor=!isColor">Real</mat-slide-toggle>
+       
+      </li>
+    </ul>
+</nav> -->
+<!-- Sidebar menu -->
+<!-- <div class="side-nav {{isShow?'':'close'}}"  >
+  <div class="row pt-4 pl-3 align-items-center">
+    <div class="col-11 offset-1 pl-0">
+      <p class="name ">FirstName LastName</p>
+      <p class="name ">Logout</p>
+    </div>
+  </div>
+  <div class="devider"></div>
+  <ul class="side mt-3">
+  <li class="side-list" [routerLink]="['/app/guide-me']">
+    <img class="icon " src="assets/image/power.png">
+    Guide me
+  </li>
+  <li class="side-list" [routerLink]="['/app/my-document']">
+    <img class="icon " src="assets/image/signing-the-contract.png">
+    My docs
+  </li>
+  <li class="side-list" [routerLink]="['/app/cwallet']">
+    <img class="icon " src="assets/image/wallet-filled-money-tool.png">
+    cWallet
+  </li>
+  <li class="side-list" [routerLink]="['/app/buysell-exchange']">
+    <img class="icon " src="assets/image/people-trading.png">
+    Buy/Sell Exchange
+  </li>  
+  <li class="side-list" [routerLink]="['/app/system-status']">
+    <img class="icon " src="assets/image/battery.png">
+    Systems status
+  </li>
+  <li class="side-list" [routerLink]="['/app/invite-someone']">
+    <img class="icon " src="assets/image/invitation.png">
+    Invite someone
+  </li>
+  <li class="side-list" [routerLink]="['/app/guide-me']">
+    <img class="icon " src="assets/image/parameters.png">
+    Parameters
+  </li>
+  <li class="side-list" [routerLink]="['/app/contactus']">
+    <img class="icon " src="assets/image/phone-contact.png">
+    Contact us
+  </li>  
+
+</ul>
+</div>
+<div class="overlay" *ngIf="isShow" (click)="isShow=!isShow"></div> -->
+<!-- /Sidebar menu -->
+
+<div class="example-container " [class.example-is-mobile]="mobileQuery.matches" *ngIf="shouldRun">
+  <mat-toolbar class=" example-toolbar {{isColor? ' primary-color':'secondary-color'}}">
+    <button mat-icon-button (click)="snav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <!-- <h1 class="example-app-name">Responsive App</h1> -->
+    <img class="logo" src="assets/image/c_logo_w.png">
+    <mat-slide-toggle class=" ml-auto" (change)="isColor=!isColor">{{isColor?"Demo":"Real"}}</mat-slide-toggle>
+  </mat-toolbar>
+
+  <mat-sidenav-container class=" {{isColor?'example-sidenav-container-change': 'example-sidenav-container'}}"
+    [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+    <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'" [fixedInViewport]="mobileQuery.matches"
+      fixedTopGap="56">
+      <div class="row pt-4 pl-3 align-items-center border-tb">
+        <div class="col-11 offset-1 pl-0">
+          <p class="name ">FirstName LastName</p>
+          <p class="name ">Logout</p>
+        </div>
+      </div>
+      <mat-nav-list class="side-nav-list">
+        <a mat-list-item routerLink="." color="light">
+          <img class="icon " src="assets/image/power.png">
+          Guide me
+        </a>
+      </mat-nav-list>
+      <mat-nav-list class="side-nav-list">
+        <a mat-list-item routerLink="." color="light">
+          <img class="icon " src="assets/image/signing-the-contract.png">
+          My docs
+        </a>
+      </mat-nav-list>
+      <mat-nav-list class="side-nav-list">
+        <a mat-list-item routerLink="." color="light">
+          <img class="icon " src="assets/image/wallet-filled-money-tool.png">
+          cWallet
+        </a>
+      </mat-nav-list>
+      <mat-nav-list class="side-nav-list">
+        <a mat-list-item routerLink="." color="light">
+          <img class="icon " src="assets/image/people-trading.png">
+          Buy/Sell Exchange
+        </a>
+      </mat-nav-list>
+      <mat-nav-list class="side-nav-list">
+        <a mat-list-item routerLink="." color="light">
+          <img class="icon " src="assets/image/battery.png">
+          Systems status
+        </a>
+      </mat-nav-list>
+      <mat-nav-list class="side-nav-list">
+        <a mat-list-item routerLink="." color="light">
+          <img class="icon " src="assets/image/invitation.png">
+          Invite someone
+          </a>
+      </mat-nav-list>
+      <mat-nav-list class="side-nav-list">
+        <a mat-list-item routerLink="." color="light">
+          <img class="icon " src="assets/image/parameters.png">
+          Parameters
+          </a>
+      </mat-nav-list>
+      <mat-nav-list class="side-nav-list">
+        <a mat-list-item routerLink="." color="light">
+          <img class="icon " src="assets/image/phone-contact.png">
+          Contact us
+          </a>
+      </mat-nav-list>
+
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <p *ngFor="let content of fillerContent">{{content}}</p>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
+
+<!-- footer btn -->
+<div class="row footer-btn">
+  <div class="col-8">
+    <button class="btn-block color" mat-raised-button>Configure Run</button>
+  </div>
+  <div class="col-4 pl-0">
+    <button class="btn-block icon-btn" mat-raised-button
+      (click)="status=status=='waiting' ? 'running':status=='running' ? 'stop':'waiting'">
+      <!-- <img class="waiting {{status=='waiting' ? 'show-icon':''}}" src="assets/image/loading.png"> -->
+      <!-- <img class="running {{status=='running' ? 'show-icon':''}}" src="assets/image/running.png"> -->
+      <!-- <img class="stop {{status=='stop' ? 'show-icon':''}}" src="assets/image/stop.png"> -->
+      <span class="waiting {{status=='waiting' ? 'show-icon':''}}">WAITING</span>
+      <span class="running {{status=='running' ? 'show-icon':''}}">RUNNING</span>
+      <span class="stop {{status=='stop' ? 'show-icon':''}}">STOP</span>      
+    </button>
+  </div>
+</div>
+

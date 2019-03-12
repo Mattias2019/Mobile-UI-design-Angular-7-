@@ -1,0 +1,110 @@
+.contact-btn {
+    background-color: rgb(79,134,142);
+    color: white;
+    float: right;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 0;
+}
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.bg-image-style{
+    width: 150px;
+    height: 174px;
+}
+.card{
+    margin:0.5rem;
+}
+.icon-involep{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    margin-right: 5px;
+}
+.logo {
+    text-align: center;
+    margin: {
+        top: 75px;
+        bottom: 25px;
+    }
+    .logo-img {
+        width: 135px;
+        margin-bottom: 10px;
+    }
+    .logo-text {
+        p {
+            margin: 0;
+        }
+    }
+}
+.disclaimer-text {
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    text-decoration: underline;
+    left: 50%;
+    transform: translateX(-50%);  
+    color: rgb(79,134,142); 
+}
+.d-b {
+    display: block;
+}
+.w-100 {
+    width: 100%;
+}
+.mx-auto {
+    margin: {
+        left: auto;
+        right: auto;       
+    }
+}
+.my-auto {
+    margin: {
+        top: auto;
+        bottom: auto;       
+    }
+}
+.max-width-500{
+    max-width: 500px;
+}
+.padding-right{
+    padding-right:0px;
+}
+
+
+@media screen and(min-width:768px){
+    .margion-top{
+        left: 20%;
+        right: 20%;
+    }
+
+}
+.margion-top{
+    // left: 20%;
+    // right: 20%;
+    position: absolute;
+    width: auto;
+    bottom: 0;
+    //  background: #fff;
+    z-index: 100;
+    transition: all 0.3s linear;
+    // visibility: hidden;
+    // transform: translateX(100%);
+    opacity: 0;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,0.16);
+}
+.margion-top.active{
+    // visibility: visible;
+    // transform: translateX(0);
+    opacity: 1;
+}
+.accept-btn{
+    font-size: 16px;
+}
+.overflow-auto{
+    height: 100vh;
+    overflow: hidden;
+}

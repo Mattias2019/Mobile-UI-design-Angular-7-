@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;overflow-x: hidden; }
+// <==========mainpage css===============>
+// toggle btn css start
+.mat-slide-toggle.mat-checked .mat-slide-toggle-thumb{background-color: #2c757e;}
+.mat-slide-toggle.mat-checked .mat-slide-toggle-bar{background-color: #f2f3f3f5;}
+// toggle btn css end
+.example-sidenav-container,.example-sidenav-container-change{
+    .mat-drawer-inner-container{margin-top: 52px;position: fixed;color: #fff;width: 220px;}
+.mat-nav-list .mat-list-item{color: #fff;font-size:14px;height: 42px;}
+}
+// <==========/mainpage css===============>
